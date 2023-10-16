@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .Mondrian{
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+      height: 748px;
+      width: 748px;
+      background-color:black;
+    }
+    .box{
+      background-color: #F0F1EC;
+    }
+    .red{
+      background-color: #E72F24;
+    }
+    .A{
+      grid-column: span 3;
+    }
+    .B{
+      grid-row: span 2;
+    }
+    .C{
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    .D{
+      background-color: #004592;
+      border-bottom: 10px solid black;
+    }
+    .E{
+      grid-row: span 2;
+    }
+    .G{
+      background-color: #F9D01E;
+    }
+    .H{
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="Mondrian">
+    <div class="box red"></div>
+    <div class="box A"></div>
+    <div class="box B"></div>
+    <div class="box C"></div>
+    <div class="box D"></div>
+    <div class="box E"></div>
+    <div class="box F"></div>
+    <div class="box G"></div>
+    <div class="box H"></div>
+  </div>
+</body>
+
+</html>
